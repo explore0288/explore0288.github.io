@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Demo</title>
+</head>
+<body>
+    <h2>Simple ML Prediction Demo</h2>
+    <p>Enter a number to predict output (y = 2x + 1)</p>
+
+    <input id="input" type="number">
+    <button onclick="predict()">Predict</button>
+    <p id="result"></p>
+
+<script>
+function predict() {
+    let x = parseFloat(document.getElementById("input").value);
+    let y = 2 * x + 1;
+    document.getElementById("result").innerText = "Predicted Output: " + y;
+}
+</script>
+
+</body>
+</html>
